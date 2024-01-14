@@ -93,7 +93,9 @@ return [
 
         'mongodb' => [
             'driver' => 'mongodb',
-            'dsn' => env('DB_URI', 'mongodb+srv://pageboyJr:P2L0RZ0t0lG5oas9@cluster0.cymddng.mongodb.net/threads?retryWrites=true&w=majority'),
+            'host' => env('DB_HOST', 'localhost'),
+            'port' => env('DB_PORT', 27017),
+            'dsn' => env('DB_URI'),
             'database' => 'myappdb',
         ],
     ],
