@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Jenssegers\Mongodb\Eloquent\Model as Moloquent;
 
-class Threads extends Moloquent
+class Comment extends Moloquent
 {
-    protected $connection = 'comments';
+    protected $collection = 'comments';
 }
